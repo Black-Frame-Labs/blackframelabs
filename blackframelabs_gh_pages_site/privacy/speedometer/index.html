@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — GPS Speedometer &amp; Trip Log</title>
+  <meta name="description" content="Privacy policy for GPS Speedometer &amp; Trip Log by BlackFrameLabs.">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <main class="document">
+    <h1>Privacy Policy — GPS Speedometer &amp; Trip Log</h1>
+    <p class="effective"><strong>Effective date:</strong> October 2026</p>
+
+    <h2>Introduction</h2>
+    <p>This policy explains how GPS Speedometer &amp; Trip Log (package name <code>com.blackframelabs.speedometer</code>) handles information. The app processes location and trip information to provide its driving features. Most processing and storage takes place locally on the user's device.</p>
+
+    <h2>Location and driving data</h2>
+    <p>The app needs location access while it is being used to show current GPS speed, record trips and distance, determine trip start and end information, match offline speed-limit data, and provide compass or course information where applicable. Location is used for app functionality and the trip log, not for advertising or user profiling.</p>
+    <p>The app does not request Android background-location permission and is not intended to operate as a hidden background location tracker. Location tracking is tied to the app's visible lifecycle, including its explicitly supported Picture-in-Picture mode.</p>
+
+    <h2>Trip log and local storage</h2>
+    <p>Trip information is stored locally on the device. Depending on the features used, this can include:</p>
+    <ul>
+      <li>trip start and end times and distance;</li>
+      <li>start and destination coordinates;</li>
+      <li>route samples used for local trip functionality and recovery;</li>
+      <li>resolved start and destination addresses when requested;</li>
+      <li>app settings; and</li>
+      <li>locally cached data required by app features.</li>
+    </ul>
+    <p>This locally stored information is not sent to BlackFrameLabs. The app is not intentionally configured to include its data in Android cloud backup.</p>
+
+    <h2>Offline speed-limit data</h2>
+    <p>Speed-limit estimates are matched using offline road data included with or stored by the app. Initial offline coverage is limited to Finland. The app does not send the user's location to an online speed-limit service to determine the displayed estimate.</p>
+    <p class="note">Displayed speed limits are estimates. Road signs and applicable traffic rules always take precedence.</p>
+
+    <h2>Optional address lookup</h2>
+    <p>The Driving Diary can resolve a trip's start and destination coordinates into human-readable addresses. The app asks for confirmation for each address-resolution action. If the user chooses No, no lookup request is made. If the user chooses Yes, only the endpoint coordinates needed to resolve the requested start and destination addresses are sent over HTTPS to OpenStreetMap Nominatim.</p>
+    <p>The trip route is not sent to Nominatim for address lookup. Nominatim receives the requested coordinates and ordinary network-request information needed to handle the request.</p>
+
+    <h2>Third-party service — OpenStreetMap Nominatim</h2>
+    <p>Optional reverse geocoding is provided by <a href="https://operations.osmfoundation.org/policies/nominatim/" rel="external">OpenStreetMap Nominatim</a>. When the user chooses this feature, the request is handled by that external service and is subject to the <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="external">OpenStreetMap Foundation privacy policy</a>.</p>
+
+    <h2>Advertising and analytics</h2>
+    <p>The app has no advertising, analytics SDK, user account, or cloud trip storage.</p>
+
+    <h2>Data sharing</h2>
+    <p>BlackFrameLabs does not operate a backend that collects driving history. The app does not intentionally provide BlackFrameLabs with trip history, driving routes, GPS history, or resolved trip addresses for analytics, advertising, or profiling. The only online transfer described by this policy is the user-requested address lookup explained above.</p>
+    <p>Ordinary speedometer, trip-log, compass, and offline speed-limit operation does not require sending driving data to an online BlackFrameLabs service.</p>
+
+    <h2>Data deletion</h2>
+    <p>No fixed retention period is set for local trip records. They remain on the device until the user deletes them through the app or removes the app's local data. BlackFrameLabs does not maintain a remote trip database, so there is no remote copy for BlackFrameLabs to delete.</p>
+
+    <h2>Security</h2>
+    <p>Trip information is kept in application-local storage. Optional address-lookup requests use HTTPS. No method of storage or transmission can be guaranteed to be completely secure.</p>
+
+    <h2>Changes to this privacy policy</h2>
+    <p>This policy may be updated if the app's functionality or data practices change. The effective date on this page will be updated when appropriate.</p>
+
+    <h2>OpenStreetMap attribution</h2>
+    <p>The app uses OpenStreetMap-derived offline road data and OpenStreetMap Nominatim for optional address lookup. Data attribution: <a href="https://www.openstreetmap.org/copyright" rel="external">© OpenStreetMap contributors</a>.</p>
+
+    <footer><a href="../../">BlackFrameLabs</a></footer>
+  </main>
+</body>
+</html>
